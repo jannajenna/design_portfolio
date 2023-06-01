@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <nav>
+    <nav class="animate_first">
       <a href="index.html">Logo</a>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -21,7 +21,7 @@
       </ul>
     </nav>
 
-    <header>
+    <header id="top" class="animate_first">
       <div class="header_text">
         <h1 class="header_h1">Colors and animations</h1>
         <img src="../assets/project3/moc.jpg" alt="mock up solution in desktop, laptop, tablet and phone view" />
@@ -29,19 +29,23 @@
     </header>
     <main>
       <section class="intro">
-        <div class="highlight" id="assignment">
+        <div class="highlight animate" id="assignment">
           <h2>The solution</h2>
           <p>
-            In this theme we revisited the elements and theories of design that are the fundamental tools to create coherent and appealing web solutions. Typography, color and responsiveness are the elements and tools that we had to use to improve a
-            set of given exercises.
+            Given a mock-up landing page for the first part I made use of the given Huemint website to play around with different possibilities of color combinations. My intentions were to have some color which resulted in choosing a green color for
+            the fonts (secondary color), a color on the spectrum of yellow for the accent while having two primary colors for the background which allowed me to differentiate sections of the website depending on the background color. <br /><br />
+            For the second part, making a dark theme, I created a color palette in which there is a contrast enough between text and font so that the legibility is optimal. The accent color had to be modified for a more vibrant tone of orange and the
+            background now it has only one color, but the sections are differentiated by dividers of the same contrasting color that is applied in the fonts. <br /><br />
+            For the third and last part of the assignment, I decided to work with Motion One from the basis that I knew I wanted to learn about it in specific by contraposition to JavaScript animations, which I also found more complex. I planned the
+            animation so the appearance of the different elements and sections on load or in view would be progressive and smooth.
           </p>
-          <a class="solution_link" href="http://" target="_blank">link to the web solution</a>
+          <a class="solution_link" href="https://abarela.dk/semester_3/colors-and-animations/" target="_blank">link to the web solution</a>
         </div>
       </section>
       <section class="projects" id="project">
-        <h2>Details of the project</h2>
+        <h2 class="animate2">Details of the project</h2>
         <div class="project_container">
-          <article class="detail">
+          <article class="detail animate2">
             <h3>Fonts and color palette</h3>
             <div class="detail1">
               <div>
@@ -85,44 +89,34 @@
               </div>
             </div>
           </article>
-          <article class="detail">
+          <article class="detail animate2">
             <h3>The code</h3>
             <div class="figure_wraper2">
               <figure>
-                <img class="figure3" src="../assets/project2/details1.png" alt="screenshoot mobile view of section" />
-                <figcaption>Screenshoot of the mobile view of a section</figcaption>
+                <img class="figure4" src="../assets/project3/details1.png" alt="screenshoot of the root colors light mode" />
+                <figcaption>Root element defining variables for the light mode colors</figcaption>
               </figure>
               <figure>
-                <img class="figure3" src="../assets/project2/details4.png" alt="screenshoot of the code" />
-                <figcaption>Css code od the avobe ilustrative section mobile first design</figcaption>
+                <img class="figure4" src="../assets/project3/details2.png" alt="screenshoot of the root colors dark mode" />
+                <figcaption>Root element defining variables for the dark mode colors</figcaption>
               </figure>
-              <!--  <figure>
-                <img class="figure3" src="../assets/project2/details2.png" alt="screenshoot desktop view of section" />
-                <figcaption>Screenshoot of the desktop view of a section</figcaption>
-              </figure> -->
-            </div>
-            <div class="figure_wraper2">
               <figure>
-                <img class="figure3" src="../assets/project2/details3.png" alt="screenshoot of the code" />
-                <figcaption>Css code for media queries</figcaption>
+                <img class="figure4" src="../assets/project3/details.png" alt="screenshoot code motion one" />
+                <figcaption>Screenshoot of one of the animations using Motion One</figcaption>
               </figure>
-              <!-- <figure>
-                <img class="figure3" src="../assets/project2/details4.png" alt="screenshoot of the code" />
-                <figcaption>Css code od the avobe ilustrative section mobile first design</figcaption>
-              </figure> -->
             </div>
           </article>
           <article class="detail">
             <h3>Before and after</h3>
             <div class="figure_wraper2">
-              <a target="_blank">
-                <img src="../assets/project3/before.png" alt="Screenshoot of the given assignment" height="800px" srcset="" />
+              <a target="_blank" class="detail animate2">
+                <img src="../assets/project3/before.png" alt="Screenshoot of the given assignment" height="800px" />
               </a>
-              <a target="_blank">
-                <img src="../assets/project3/after.png" alt="Screenshoot of the redesign assignment" height="800px" srcset="" />
+              <a target="_blank" class="detail animate2">
+                <img src="../assets/project3/after.png" alt="Screenshoot of the redesign assignment" height="800px" />
               </a>
-              <a target="_blank">
-                <img src="../assets/project3/dark.png" alt="Screenshoot of the redesign assignment" height="800px" srcset="" />
+              <a target="_blank" class="detail animate2">
+                <img src="../assets/project3/dark.png" alt="Screenshoot of the redesign assignment" height="800px" />
               </a>
             </div>
           </article>
@@ -130,7 +124,9 @@
       </section>
     </main>
     <footer>
-      <h2>SOME TEXT FOR THE FOOTER</h2>
+      <p>Anna Barella Alonso for Multimedia Desgin 3rd semestre</p>
+      <a href="#top">to the top </a>
     </footer>
+    <script type="module" src="../script.js"></script>
   </body>
 </html>

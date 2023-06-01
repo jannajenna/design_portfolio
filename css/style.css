@@ -33,7 +33,7 @@
   --screen-sp-s: calc(8px + 1.5625vw);
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 
@@ -233,9 +233,12 @@ header {
 footer {
   padding: 5vh 2rem;
   background-color: var(--color-accent2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-footer h2 {
+footer p {
   color: var(--color-primary1);
 }
 
@@ -336,7 +339,14 @@ footer h2 {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  /*  flex-wrap: wrap; */
+  align-items: center;
+}
+
+.figure_wraper3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  flex-wrap: wrap;
   align-items: center;
 }
 

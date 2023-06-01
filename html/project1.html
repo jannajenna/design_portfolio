@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <nav>
+    <nav class="animate_first">
       <a href="index.html">Logo</a>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -21,7 +21,7 @@
       </ul>
     </nav>
 
-    <header>
+    <header id="top" class="animate_first">
       <div class="header_text">
         <h1 class="header_h1">Fonts and UI components</h1>
         <img src="../assets/project1/moc.jpg" alt="mock up solution in desktop, laptop, tablet and phone view" />
@@ -29,19 +29,22 @@
     </header>
     <main>
       <section class="intro">
-        <div class="highlight" id="assignment">
+        <div class="highlight animate" id="assignment">
           <h2>The solution</h2>
           <p>
-            In this theme we revisited the elements and theories of design that are the fundamental tools to create coherent and appealing web solutions. Typography, color and responsiveness are the elements and tools that we had to use to improve a
-            set of given exercises.
+            To solve this assignment, I started comparing font pairings between serif and sans serif. In the end I decided to choose a pairing of only sans serif, Poppins and Open sans, since I wanted to have bold and strong heading and keeping in
+            mind that I web design sans ser for paragraph or body of text makes it better for legibility. <br /><br />
+            For the second part of the assigment, I worked on the cards by making them look as the currents trends: a current standard card has slightly rounded corners and a shadow to give some volume and appearance to be an element that it is
+            positioned on top of a surface. I also made the cards responsive so the number of cards per row will vary depending on the width of the screen. I styled the interior of the cards, the image fits only the top part of the card, the text has
+            a hierarchy that it is defined by its font size or color and finally I redesigned the buttons so that there is also a hierarchy between them by primarily making use of color.
           </p>
-          <a class="solution_link" href="http://" target="_blank">link to the web solution</a>
+          <a class="solution_link" href="https://abarela.dk/semester_3/fonts-and-components/" target="_blank">link to the web solution</a>
         </div>
       </section>
       <section class="projects" id="project">
-        <h2>Details of the project</h2>
+        <h2 class="animate2">Details of the project</h2>
         <div class="project_container">
-          <article class="detail">
+          <article class="detail animate2">
             <h3>Fonts and color palette</h3>
             <div class="detail1">
               <div>
@@ -63,7 +66,7 @@
               </div>
             </div>
           </article>
-          <article class="detail">
+          <article class="detail animate2">
             <h3>The code</h3>
             <div class="figure_wraper2">
               <figure>
@@ -79,11 +82,11 @@
           <article class="detail">
             <h3>Before and after</h3>
             <div class="figure_wraper2">
-              <a target="_blank">
-                <img src="../assets/project1/project1_before.png" alt="Screenshoot of the given assignment" height="800px" srcset="" />
+              <a target="_blank" class="animate2">
+                <img src="../assets/project1/project1_before.png" alt="Screenshoot of the given assignment" height="800px" />
               </a>
-              <a target="_blank">
-                <img src="../assets/project1/project1_after.png" alt="Screenshoot of the redesign assignment" height="800px" srcset="" />
+              <a target="_blank" class="animate2">
+                <img src="../assets/project1/project1_after.png" alt="Screenshoot of the redesign assignment" height="800px" />
               </a>
             </div>
           </article>
@@ -91,7 +94,9 @@
       </section>
     </main>
     <footer>
-      <h2>SOME TEXT FOR THE FOOTER</h2>
+      <p>Anna Barella Alonso for Multimedia Desgin 3rd semestre</p>
+      <a href="#top">to the top </a>
     </footer>
+    <script type="module" src="../script.js"></script>
   </body>
 </html>
